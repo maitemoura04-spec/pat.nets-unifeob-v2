@@ -2,120 +2,199 @@
 <html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>UNIFEOB Move</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="style.css">
+<title>Pat.nets UNIFEOB</title>
+
+<link rel="stylesheet"
+href="style.css">
 
 </head>
 
 <body>
 
-<header>
+<!-- LOGIN -->
 
-<div class="logo">🛴 UNIFEOB Move</div>
+<div id="login"
+class="tela">
 
-<p class="subtitle">
-Mobilidade Inteligente para o Campus Mantiqueira
-</p>
+<h1>🛴 Pat.nets UNIFEOB </h1>
 
-</header>
+<input
+id="ra"
+placeholder="RA">
 
-<section class="dashboard">
+<br><br>
 
-<div class="card">
-<h2>100</h2>
-<p>Patinetes</p>
-</div>
+<input
+id="senha"
+type="password"
+placeholder="Senha">
 
-<div class="card">
-<h2>82</h2>
-<p>Disponíveis</p>
-</div>
+<br><br>
 
-<div class="card">
-<h2>12</h2>
-<p>Em Uso</p>
-</div>
+<button
+onclick="login()">
 
-<div class="card">
-<h2>6</h2>
-<p>Recarga</p>
-</div>
+Entrar
 
-</section>
-
-<section class="mapa">
-
-<h2>📍 Estações do Campus</h2>
-
-<div class="estacoes">
-
-<div class="estacao">
-<h3>A</h3>
-<p>18 Patinetes</p>
-</div>
-
-<div class="estacao">
-<h3>B</h3>
-<p>14 Patinetes</p>
-</div>
-
-<div class="estacao">
-<h3>C</h3>
-<p>18 Patinetes</p>
-</div>
-
-<div class="estacao">
-<h3>D</h3>
-<p>16 Patinetes</p>
-</div>
-
-<div class="estacao">
-<h3>E1</h3>
-<p>17 Patinetes</p>
-</div>
-
-<div class="estacao">
-<h3>E2</h3>
-<p>17 Patinetes</p>
-</div>
+</button>
 
 </div>
 
-</section>
+<!-- HOME -->
 
-<section class="mapa">
+<div id="home"
+class="tela"
+style="display:none;">
 
-<h2>📊 Resumo do Dia</h2>
+<h1>Olá, seja bem vindo! 👋</h1>
 
 <div class="card">
 
-<p>134 viagens realizadas hoje</p>
+<h2>Patinetes Disponíveis</h2>
 
-<p>24,7 km percorridos</p>
+<p>Estação A: 18</p>
 
-<p>5,8 kg de CO₂ evitados</p>
+<p>Estação B: 14</p>
+
+<p>Estação C: 18</p>
+
+<p>Estação D: 16</p>
+
+<p>Estação E1: 17</p>
+
+<p>Estação E2: 17</p>
 
 </div>
 
-</section>
+<button
+onclick="mostrarTela('reserva')">
 
-<nav>
+Reservar Patinete
 
-<a href="#">🏠</a>
+</button>
 
-<a href="#">🛴</a>
+<button
+onclick="mostrarTela('perfil')">
 
-<a href="#">📍</a>
+Meu Perfil
 
-<a href="#">📊</a>
+</button>
 
-<a href="#">👤</a>
+</div>
 
-</nav>
+<!-- RESERVA -->
+
+<div id="reserva"
+class="tela"
+style="display:none;">
+
+<h1>Reserva</h1>
+
+<div class="card">
+
+<h2>PT-032</h2>
+
+<p>Bateria: 82%</p>
+
+<p>Estação C</p>
+
+</div>
+
+<button
+onclick="mostrarTela('qr')">
+
+Confirmar Reserva
+
+</button>
+
+</div>
+
+<!-- QR -->
+
+<div id="qr"
+class="tela"
+style="display:none;">
+
+<h1>QR Code</h1>
+
+<h2>📱</h2>
+
+<p>Simulação de leitura</p>
+
+<button
+onclick="mostrarTela('viagem')">
+
+Escanear QR
+
+</button>
+
+</div>
+
+<!-- VIAGEM -->
+
+<div id="viagem"
+class="tela"
+style="display:none;">
+
+<h1>Viagem Ativa</h1>
+
+<div class="card">
+
+<h2>12:35</h2>
+
+<p>Bateria: 78%</p>
+
+<p>Origem: C</p>
+
+<p>Destino: D</p>
+
+</div>
+
+<button
+onclick="mostrarTela('home')">
+
+Finalizar
+
+</button>
+
+</div>
+
+<!-- PERFIL -->
+
+<div id="perfil"
+class="tela"
+style="display:none;">
+
+<h1>Perfil</h1>
+
+<div class="card">
+
+<p>Nome: Maitê Moura</p>
+
+<p>RA: 202510123</p>
+
+<p>Curso: Engenharia Mecânica</p>
+
+<p>Viagens: 12</p>
+
+</div>
+
+<button
+onclick="mostrarTela('home')">
+
+Voltar
+
+</button>
+
+</div>
+
+<script src="app.js"></script>
 
 </body>
 
