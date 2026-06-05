@@ -1,58 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pat.nets UNIFEOB</title>
+<title>Home</title>
 
-<link rel="stylesheet"
-href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- LOGIN -->
+<header>
 
-<div id="login"
-class="tela">
+<h1>UNIFEOB Move</h1>
 
-<h1>🛴 Pat.nets UNIFEOB </h1>
+<p>Usuário autenticado</p>
 
-<input
-id="ra"
-placeholder="RA">
-
-<br><br>
-
-<input
-id="senha"
-type="password"
-placeholder="Senha">
-
-<br><br>
-
-<button
-onclick="login()">
-
-Entrar
-
-</button>
-
-</div>
-
-<!-- HOME -->
-
-<div id="home"
-class="tela"
-style="display:none;">
-
-<h1>Olá, seja bem vindo! 👋</h1>
+</header>
 
 <div class="card">
 
@@ -72,130 +40,21 @@ style="display:none;">
 
 </div>
 
-<button
-onclick="mostrarTela('reserva')">
+<div class="card">
 
-Reservar Patinete
+<h2>Viagens Hoje</h2>
 
-</button>
+<p>134 viagens realizadas</p>
 
-<button
-onclick="mostrarTela('perfil')">
+<p>5,8 kg de CO₂ evitados</p>
+
+</div>
+
+<button onclick="location.href='perfil.html'">
 
 Meu Perfil
 
 </button>
 
-</div>
-
-<!-- RESERVA -->
-
-<div id="reserva"
-class="tela"
-style="display:none;">
-
-<h1>Reserva</h1>
-
-<div class="card">
-
-<h2>PT-032</h2>
-
-<p>Bateria: 82%</p>
-
-<p>Estação C</p>
-
-</div>
-
-<button
-onclick="mostrarTela('qr')">
-
-Confirmar Reserva
-
-</button>
-
-</div>
-
-<!-- QR -->
-
-<div id="qr"
-class="tela"
-style="display:none;">
-
-<h1>QR Code</h1>
-
-<h2>📱</h2>
-
-<p>Simulação de leitura</p>
-
-<button
-onclick="mostrarTela('viagem')">
-
-Escanear QR
-
-</button>
-
-</div>
-
-<!-- VIAGEM -->
-
-<div id="viagem"
-class="tela"
-style="display:none;">
-
-<h1>Viagem Ativa</h1>
-
-<div class="card">
-
-<h2>12:35</h2>
-
-<p>Bateria: 78%</p>
-
-<p>Origem: C</p>
-
-<p>Destino: D</p>
-
-</div>
-
-<button
-onclick="mostrarTela('home')">
-
-Finalizar
-
-</button>
-
-</div>
-
-<!-- PERFIL -->
-
-<div id="perfil"
-class="tela"
-style="display:none;">
-
-<h1>Perfil</h1>
-
-<div class="card">
-
-<p>Nome: Maitê Moura</p>
-
-<p>RA: 202510123</p>
-
-<p>Curso: Engenharia Mecânica</p>
-
-<p>Viagens: 12</p>
-
-</div>
-
-<button
-onclick="mostrarTela('home')">
-
-Voltar
-
-</button>
-
-</div>
-
-<script src="app.js"></script>
-
 </body>
-
 </html>
