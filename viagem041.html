@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Viagem Ativa</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🛴 Viagem Ativa</h1>
+
+<p>PT-041</p>
+
+</header>
+
+<div class="card">
+
+<h2>Patinete</h2>
+
+<p>Bateria: 76%</p>
+
+<p>Origem: Estação A</p>
+
+</div>
+
+<div class="card">
+
+<h2>⏳ Tempo Restante</h2>
+
+<h1 id="contador">
+
+30:00
+
+</h1>
+
+</div>
+
+<div class="card">
+
+<p>
+
+Uso permitido apenas
+dentro do campus.
+
+</p>
+
+</div>
+
+<button onclick="location.href='historico.html'">
+
+Finalizar Viagem
+
+</button>
+
+<script>
+
+let tempo = 1800;
+
+const contador =
+document.getElementById(
+"contador"
+);
+
+setInterval(() => {
+
+let min =
+Math.floor(
+tempo / 60
+);
+
+let seg =
+tempo % 60;
+
+contador.innerText =
+
+String(min)
+.padStart(2,"0")
+
++
+
+":"
+
++
+
+String(seg)
+.padStart(2,"0");
+
+if(tempo > 0){
+
+tempo--;
+
+}
+
+},1000);
+
+</script>
+
+</body>
+
+</html>
