@@ -1,49 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+function login(){
 
-<head>
+const usuario =
+document.getElementById('usuario').value;
 
-<meta charset="UTF-8">
+const senha =
+document.getElementById('senha').value;
 
-<link rel="stylesheet" href="style.css">
+if(usuario === ''){
 
-<title>Perfil</title>
+alert('Digite RA ou E-mail');
 
-</head>
+return;
 
-<body>
+}
 
-<h1>Perfil Acadêmico</h1>
+if(senha === '123456'){
 
-<div class="card">
-
-<p id="usuarioLogado"></p>
-
-<p>Status: Ativo</p>
-
-<p>Viagens Realizadas: 12</p>
-
-<p>Tempo Economizado: 1h42</p>
-
-</div>
-
-<button onclick="location.href='home.html'">
-
-Voltar
-
-</button>
-
-<script>
-
-document.getElementById(
-'usuarioLogado'
-).innerText =
-'Identificação: ' +
-localStorage.getItem(
-'usuario'
+localStorage.setItem(
+'usuario',
+usuario
 );
 
-</script>
+window.location.href =
+'home.html';
 
-</body>
-</html>
+}else{
+
+alert('Senha inválida');
+
+}
+
+}
