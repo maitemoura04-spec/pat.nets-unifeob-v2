@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pat.nets UNIFEOB</title>
+<title>Perfil</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="login-container">
+<header>
+<h1>👤 Meu Perfil</h1>
+<p>Informações do usuário</p>
+</header>
 
-<h1>🛴 Pat.nets UNIFEOB</h1>
+<div class="card">
 
-<p>Mobilidade Inteligente para o Campus Mantiqueira</p>
+<h2>Perfil Acadêmico</h2>
 
-<input
-id="usuario"
-placeholder="RA ou E-mail">
+<p id="usuarioLogado"></p>
 
-<input
-id="senha"
-type="password"
-placeholder="Senha">
+<p>Status: Ativo</p>
 
-<button onclick="login()">
-Entrar
-</button>
+<p>Permissão: Usuário</p>
+
+<p>Viagens Realizadas: 12</p>
+
+<p>Tempo Economizado: 1h42</p>
 
 </div>
 
-<script src="app.js"></script>
+<button onclick="location.href='home.html'">
+⬅ Voltar
+</button>
+
+<script>
+
+document.getElementById(
+'usuarioLogado'
+).innerText =
+'Identificação: ' +
+localStorage.getItem('usuario');
+
+</script>
 
 </body>
 </html>
