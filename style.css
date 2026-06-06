@@ -309,5 +309,41 @@ color:#FFFFFF;
 color:#A9B8D0;
 
 margin-top:5px;
+  
+.estacao{
+
+    background:#15233A;
+
+    border:1px solid #243855;
+
+    border-radius:22px;
+
+    padding:18px;
+
+    margin-bottom:12px;
+
+    box-shadow:
+    0 4px 15px rgba(
+        0,
+        0,
+        0,
+        0.15
+    );
+
+}
+
+.estacao h3{
+
+    color:#58B6FF;
+
+    margin-bottom:6px;
+
+    font-size:20px;
+
+}
+
+.estacao p{
+
+    color:#D6E4FF;
 
 }
