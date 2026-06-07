@@ -407,3 +407,26 @@ margin-top:5px;
     );
 
 }
+.qr-simulacao{
+
+height:220px;
+
+background:#FFFFFF;
+
+color:#000000;
+
+border-radius:20px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+font-weight:bold;
+
+margin-top:15px;
+
+}
