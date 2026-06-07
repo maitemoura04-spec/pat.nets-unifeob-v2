@@ -1,100 +1,99 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
 
-    background:#08111F;
+background:linear-gradient(
+180deg,
+#08111F 0%,
+#0B1628 50%,
+#101C31 100%
+);
 
-    color:white;
+color:#FFFFFF;
 
-    font-family:'Segoe UI',sans-serif;
+font-family:'Segoe UI',sans-serif;
 
-}
+min-height:100vh;
 
-/* CONTAINER ESTILO CELULAR */
-
-.app{
-
-    max-width:430px;
-
-    min-height:100vh;
-
-    margin:auto;
-
-    padding:16px;
+padding:20px;
 
 }
 
-/* HEADER */
+/* LOGIN */
 
-header{
+.login-container{
 
-    margin-bottom:18px;
+max-width:400px;
 
-}
+margin:auto;
 
-header h1{
+margin-top:100px;
 
-    font-size:28px;
+display:flex;
 
-    margin-bottom:6px;
+flex-direction:column;
 
-}
-
-header p{
-
-    color:#A9B8D0;
-
-    font-size:14px;
+gap:15px;
 
 }
 
-/* CARDS */
+.login-container h1{
 
-.card{
+text-align:center;
 
-    background:#15233A;
+font-size:34px;
 
-    border:1px solid #243855;
-
-    border-radius:20px;
-
-    padding:16px;
-
-    margin-bottom:14px;
+color:#FFFFFF;
 
 }
 
-.card h2{
+.login-container p{
 
-    color:#58B6FF;
+text-align:center;
 
-    margin-bottom:10px;
+color:#A9B8D0;
 
-}
-
-/* MAPA */
-
-.mapa-img{
-
-    width:100%;
-
-    border-radius:16px;
-
-    display:block;
+margin-bottom:15px;
 
 }
 
-/* STATUS */
+/* INPUTS */
 
-.disponivel{
+input{
 
-    color:#32D583;
+background:#15233A;
 
-    font-weight:600;
+color:white;
+
+border:1px solid #243855;
+
+border-radius:16px;
+
+padding:16px;
+
+font-size:16px;
+
+transition:0.3s;
+
+}
+
+input:focus{
+
+outline:none;
+
+border-color:#3FA9FF;
+
+box-shadow:
+0 0 15px rgba(
+63,
+169,
+255,
+0.3
+);
 
 }
 
@@ -102,246 +101,249 @@ header p{
 
 button{
 
-    width:100%;
+background:linear-gradient(
+135deg,
+#2B8CFF,
+#58B6FF
+);
 
-    background:linear-gradient(
-        135deg,
-        #2B8CFF,
-        #58B6FF
-    );
+color:white;
 
-    color:white;
+border:none;
 
-    border:none;
+border-radius:16px;
 
-    border-radius:16px;
+padding:16px;
 
-    padding:14px;
+font-size:16px;
 
-    font-size:15px;
+font-weight:600;
 
-    font-weight:600;
+cursor:pointer;
 
-}
-
-/* BOTÕES SECUNDÁRIOS */
-
-.acoes-secundarias{
-
-    display:flex;
-
-    gap:10px;
-
-    margin-bottom:90px;
+transition:0.3s;
 
 }
 
-.acoes-secundarias button{
+button:hover{
 
-    flex:1;
+transform:translateY(-2px);
 
-}
-
-/* BOTÃO FIXO */
-
-.acao-principal{
-
-    position:fixed;
-
-    bottom:15px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:calc(100% - 30px);
-
-    max-width:430px;
+box-shadow:
+0 8px 20px rgba(
+43,
+140,
+255,
+0.3
+);
 
 }
 
-.acao-principal button{
+/* HEADER */
 
-    height:60px;
+header{
 
-    font-size:17px;
-/* LOGIN */
-
-.login-page{
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:20px;
+margin-bottom:20px;
 
 }
 
-.login-container{
+header h1{
 
-    width:100%;
+font-size:30px;
 
-    max-width:380px;
+margin-bottom:5px;
+
+}
+
+header p{
+
+color:#A9B8D0;
+
+}
+
+/* CARDS */
+
+.card{
+
+background:rgba(
+22,
+35,
+58,
+0.95
+);
+
+border:1px solid #243855;
+
+border-radius:24px;
+
+padding:22px;
+
+margin-bottom:18px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:
+0 8px 24px rgba(
+0,
+0,
+0,
+0.25
+);
+
+}
+
+.card h2{
+
+color:#58B6FF;
+
+margin-bottom:10px;
+
+}
+
+.card p{
+
+color:#D6E4FF;
+
+line-height:1.6;
+
+}
+
+/* ESTAÇÕES */
+
+.estacao{
+
+background:#15233A;
+
+border:1px solid #243855;
+
+border-radius:18px;
+
+padding:15px;
+
+margin-bottom:12px;
+
+}
+
+.estacao h3{
+
+color:#58B6FF;
+
+margin-bottom:5px;
+
+}
+
+/* STATUS */
+
+.disponivel{
+
+color:#32D583;
+
+font-weight:600;
+
+}
+
+.alerta{
+
+color:#FF6B6B;
+
+font-weight:600;
+
+}
+
+/* MENU INFERIOR */
+
+nav{
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+background:#08111F;
+
+border-top:1px solid #243855;
+
+display:flex;
+
+justify-content:space-around;
+
+padding:16px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:24px;
+
+transition:0.3s;
+
+}
+
+nav a:hover{
+
+color:#58B6FF;
+
+}
+
+/* TÍTULO PREMIUM */
+
+.logo{
+
+font-size:36px;
+
+font-weight:700;
+
+color:#FFFFFF;
+
+}
+
+.subtitle{
+
+color:#A9B8D0;
+
+margin-top:5px;
+  
+.estacao{
 
     background:#15233A;
 
     border:1px solid #243855;
 
-    border-radius:24px;
+    border-radius:22px;
 
-    padding:30px;
+    padding:18px;
+
+    margin-bottom:12px;
 
     box-shadow:
-    0 10px 30px rgba(
+    0 4px 15px rgba(
         0,
         0,
         0,
-        0.30
+        0.15
     );
 
 }
 
-.login-container h1{
+.estacao h3{
 
-    text-align:center;
+    color:#58B6FF;
 
-    margin-bottom:10px;
+    margin-bottom:6px;
 
-}
-
-.login-container p{
-
-    text-align:center;
-
-    color:#A9B8D0;
-
-    margin-bottom:25px;
-
-    line-height:1.5;
+    font-size:20px;
 
 }
 
-.login-container input{
+.estacao p{
 
-    width:100%;
+    color:#D6E4FF;
 
-    margin-bottom:15px;
-
-}
-
-.login-container button{
-
-    width:100%;
-
-}
-/* ==========================
-   LOGIN PAGE
-========================== */
-
-.login-page{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-.login-card{
-    width:100%;
-    max-width:380px;
-    background:#15233A;
-    border:1px solid #243855;
-    border-radius:28px;
-    padding:30px;
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-}
-
-.logo-area{
-    text-align:center;
-    margin-bottom:25px;
-}
-
-.logo-area h1{
-    font-size:70px;
-    margin-bottom:5px;
-}
-
-.logo-area h2{
-    color:white;
-    font-size:30px;
-    margin-bottom:10px;
-}
-
-.logo-area p{
-    color:#A9B8D0;
-    line-height:1.5;
-    font-size:14px;
-}
-
-.form-area{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-
-.form-area input{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:14px;
-    background:#0D1727;
-    color:white;
-    font-size:16px;
-}
-
-.form-area button{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:14px;
-    background:#00C896;
-    color:white;
-    font-size:17px;
-    font-weight:600;
-    cursor:pointer;
-}
-
-.footer-login{
-    text-align:center;
-    margin-top:20px;
-}
-
-.footer-login p{
-    color:#7E93B5;
-    font-size:12px;
-}
-.qr-simulacao{
-    display:flex;
-    justify-content:center;
-    margin:30px 0;
-}
-
-.qr-box{
-    width:180px;
-    height:180px;
-    background:white;
-    color:black;
-    border-radius:20px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:40px;
-    font-weight:bold;
-}
-
-.info-box{
-    background:#15233A;
-    padding:20px;
-    border-radius:16px;
 }
