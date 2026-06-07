@@ -238,186 +238,84 @@ button{
     width:100%;
 
 }
-/* =======================
-   LOGIN MODERNO
-======================= */
+/* ==========================
+   LOGIN PAGE
+========================== */
 
-.login-screen{
-
+.login-page{
     min-height:100vh;
-
-    background:#08111F;
-
-}
-
-.top-area{
-
-    text-align:center;
-
-    padding-top:70px;
-
-    padding-bottom:40px;
-
-}
-
-.logo-circle{
-
-    font-size:70px;
-
-    margin-bottom:10px;
-
-}
-
-.top-area h1{
-
-    color:#00D1A0;
-
-    font-size:38px;
-
-    margin-bottom:8px;
-
-}
-
-.top-area p{
-
-    color:#B6C3D6;
-
-    font-size:15px;
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
 .login-card{
-
-    background:#F8FAFC;
-
-    min-height:65vh;
-
-    border-radius:35px 35px 0 0;
-
-    padding:35px;
-
-}
-
-.login-card h2{
-
-    color:#0F2A52;
-
-    font-size:38px;
-
-    margin-bottom:25px;
-
-}
-
-.selector{
-
-    display:flex;
-
-    background:#EAEFF5;
-
-    border-radius:16px;
-
-    overflow:hidden;
-
-    margin-bottom:30px;
-
-}
-
-.selector button{
-
-    flex:1;
-
-    border:none;
-
-    background:none;
-
-    padding:15px;
-
-    font-weight:700;
-
-    font-size:16px;
-
-}
-
-.selector .active{
-
-    background:white;
-
-    color:#0F2A52;
-
-}
-
-.login-card label{
-
-    display:block;
-
-    margin-bottom:8px;
-
-    color:#64748B;
-
-    font-weight:600;
-
-}
-
-.login-card input{
-
     width:100%;
-
-    padding:18px;
-
-    border-radius:16px;
-
-    border:2px solid #D8E1EC;
-
-    margin-bottom:20px;
-
-    font-size:16px;
-
+    max-width:380px;
+    background:#15233A;
+    border:1px solid #243855;
+    border-radius:28px;
+    padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
 }
 
-.login-btn{
-
-    width:100%;
-
-    border:none;
-
-    border-radius:18px;
-
-    padding:18px;
-
-    background:#00C896;
-
-    color:white;
-
-    font-size:20px;
-
-    font-weight:700;
-
-}
-
-.demo-box{
-
-    margin-top:30px;
-
+.logo-area{
     text-align:center;
-
-    background:#EEF7F4;
-
-    border-radius:18px;
-
-    padding:20px;
-
+    margin-bottom:25px;
 }
 
-.demo-box h3{
+.logo-area h1{
+    font-size:70px;
+    margin-bottom:5px;
+}
 
-    color:#00A67D;
-
+.logo-area h2{
+    color:white;
+    font-size:30px;
     margin-bottom:10px;
-
 }
 
-.demo-box p{
+.logo-area p{
+    color:#A9B8D0;
+    line-height:1.5;
+    font-size:14px;
+}
 
-    color:#3D4B61;
+.form-area{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
 
+.form-area input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:#0D1727;
+    color:white;
+    font-size:16px;
+}
+
+.form-area button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:#00C896;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.footer-login{
+    text-align:center;
+    margin-top:20px;
+}
+
+.footer-login p{
+    color:#7E93B5;
+    font-size:12px;
 }
