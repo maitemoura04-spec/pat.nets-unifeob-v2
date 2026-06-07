@@ -319,3 +319,29 @@ button{
     color:#7E93B5;
     font-size:12px;
 }
+.qr-simulacao{
+    display:flex;
+    justify-content:center;
+    margin:30px 0;
+}
+
+.qr-box{
+    width:180px;
+    height:180px;
+    background:white;
+    color:black;
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+    font-weight:bold;
+}
+
+.info-box{
+    background:#15233A;
+    padding:20px;
+    border-radius:16px;
+}
