@@ -238,118 +238,186 @@ button{
     width:100%;
 
 }
-/* ==========================
-   LOGIN PAGE
-========================== */
+/* =======================
+   LOGIN MODERNO
+======================= */
 
-.login-page{
+.login-screen{
 
     min-height:100vh;
 
-    display:flex;
+    background:#08111F;
 
-    justify-content:center;
+}
 
-    align-items:center;
+.top-area{
 
-    padding:20px;
+    text-align:center;
+
+    padding-top:70px;
+
+    padding-bottom:40px;
+
+}
+
+.logo-circle{
+
+    font-size:70px;
+
+    margin-bottom:10px;
+
+}
+
+.top-area h1{
+
+    color:#00D1A0;
+
+    font-size:38px;
+
+    margin-bottom:8px;
+
+}
+
+.top-area p{
+
+    color:#B6C3D6;
+
+    font-size:15px;
 
 }
 
 .login-card{
 
-    width:100%;
+    background:#F8FAFC;
 
-    max-width:380px;
+    min-height:65vh;
 
-    background:#15233A;
+    border-radius:35px 35px 0 0;
 
-    border:1px solid #243855;
-
-    border-radius:28px;
-
-    padding:32px;
-
-    box-shadow:
-    0 15px 40px rgba(
-        0,
-        0,
-        0,
-        0.35
-    );
+    padding:35px;
 
 }
 
-.logo-area{
+.login-card h2{
 
-    text-align:center;
+    color:#0F2A52;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.selector{
+
+    display:flex;
+
+    background:#EAEFF5;
+
+    border-radius:16px;
+
+    overflow:hidden;
 
     margin-bottom:30px;
 
 }
 
-.logo-area h1{
+.selector button{
 
-    font-size:58px;
+    flex:1;
 
-    margin-bottom:10px;
+    border:none;
 
-}
+    background:none;
 
-.logo-area h2{
+    padding:15px;
 
-    font-size:28px;
+    font-weight:700;
 
-    margin-bottom:10px;
-
-}
-
-.logo-area p{
-
-    color:#A9B8D0;
-
-    line-height:1.5;
-
-    font-size:14px;
+    font-size:16px;
 
 }
 
-.form-area{
+.selector .active{
 
-    display:flex;
+    background:white;
 
-    flex-direction:column;
-
-    gap:15px;
+    color:#0F2A52;
 
 }
 
-.form-area input{
+.login-card label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#64748B;
+
+    font-weight:600;
+
+}
+
+.login-card input{
 
     width:100%;
 
+    padding:18px;
+
+    border-radius:16px;
+
+    border:2px solid #D8E1EC;
+
+    margin-bottom:20px;
+
+    font-size:16px;
+
 }
 
-.form-area button{
+.login-btn{
 
     width:100%;
 
-    margin-top:5px;
+    border:none;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    background:#00C896;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:700;
 
 }
 
-.footer-login{
+.demo-box{
+
+    margin-top:30px;
 
     text-align:center;
 
-    margin-top:25px;
+    background:#EEF7F4;
+
+    border-radius:18px;
+
+    padding:20px;
 
 }
 
-.footer-login p{
+.demo-box h3{
 
-    color:#7E93B5;
+    color:#00A67D;
 
-    font-size:12px;
+    margin-bottom:10px;
+
+}
+
+.demo-box p{
+
+    color:#3D4B61;
 
 }
