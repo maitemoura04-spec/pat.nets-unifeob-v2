@@ -2,116 +2,101 @@
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pat.net UNIFEOB</title>
 
-<title>Pat.net UNIFEOB</title>
-
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="login-screen">
+    <div class="login-page">
 
-    <div class="top-area">
+        <div class="login-card">
 
-        <div class="logo-circle">
-            🛴
-        </div>
+            <div class="logo-area">
 
-        <h1>Pat.net UNIFEOB</h1>
+                <h1>🛴</h1>
 
-        <p>
-            Mobilidade Inteligente • Campus Mantiqueira
-        </p>
+                <h2>Pat.net UNIFEOB</h2>
 
-    </div>
+                <p>
+                    Mobilidade Inteligente para o Campus Mantiqueira
+                </p>
 
-    <div class="login-card">
+            </div>
 
-        <h2>Entrar</h2>
+            <div class="form-area">
 
-        <div class="selector">
+                <input
+                    id="usuario"
+                    type="text"
+                    placeholder="RA ou E-mail">
 
-            <button class="active">
-                RA
-            </button>
+                <input
+                    id="senha"
+                    type="password"
+                    placeholder="Senha">
 
-            <button>
-                E-mail
-            </button>
+                <button onclick="login()">
+                    Entrar
+                </button>
 
-        </div>
+            </div>
 
-        <label>Usuário</label>
+            <div class="footer-login">
 
-        <input
-        id="usuario"
-        type="text"
-        placeholder="RA ou E-mail">
+                <p>
+                    Sistema de Compartilhamento de Patinetes
+                </p>
 
-        <label>Senha</label>
+                <p>
+                    RA Demo: 202510123
+                </p>
 
-        <input
-        id="senha"
-        type="password"
-        placeholder="Digite sua senha">
+                <p>
+                    Senha Demo: 123456
+                </p>
 
-        <button
-        class="login-btn"
-        onclick="login()">
-
-            Entrar
-
-        </button>
-
-        <div class="demo-box">
-
-            <h3>Modo Demonstração</h3>
-
-            <p>RA: 202510123</p>
-
-            <p>Senha: 123456</p>
+            </div>
 
         </div>
 
     </div>
 
-</div>
+    <script>
 
-<script>
+        function login() {
 
-function login(){
+            const usuario =
+                document.getElementById("usuario").value;
 
-    const usuario =
-    document.getElementById("usuario").value;
+            const senha =
+                document.getElementById("senha").value;
 
-    const senha =
-    document.getElementById("senha").value;
+            if (
+                usuario === "202510123"
+                &&
+                senha === "123456"
+            ) {
 
-    if(
-        usuario === "202510123"
-        &&
-        senha === "123456"
-    ){
+                window.location.href = "home.html";
 
-        window.location.href =
-        "home.html";
+            }
 
-    }
+            else {
 
-    else{
+                alert(
+                    "Usuário ou senha inválidos."
+                );
 
-        alert(
-        "Usuário ou senha inválidos"
-        );
+            }
 
-    }
+        }
 
-}
-
-</script>
+    </script>
 
 </body>
+
 </html>
