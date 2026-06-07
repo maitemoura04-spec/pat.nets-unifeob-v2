@@ -4,45 +4,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UNIFEOB Move</title>
+
+<title>Pat.net UNIFEOB</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="login-page">
+<div class="login-screen">
+
+    <div class="top-area">
+
+        <div class="logo-circle">
+            🛴
+        </div>
+
+        <h1>Pat.net UNIFEOB</h1>
+
+        <p>
+            Mobilidade Inteligente • Campus Mantiqueira
+        </p>
+
+    </div>
 
     <div class="login-card">
 
-        <div class="logo-area">
-            <h1>🛴</h1>
-            <h2>UNIFEOB Move</h2>
-            <p>Mobilidade Inteligente para o Campus Mantiqueira</p>
-        </div>
+        <h2>Entrar</h2>
 
-        <div class="form-area">
+        <div class="selector">
 
-            <input
-            id="usuario"
-            type="text"
-            placeholder="RA ou E-mail">
+            <button class="active">
+                RA
+            </button>
 
-            <input
-            id="senha"
-            type="password"
-            placeholder="Senha">
-
-            <button onclick="login()">
-                Entrar
+            <button>
+                E-mail
             </button>
 
         </div>
 
-        <div class="footer-login">
+        <label>Usuário</label>
 
-            <p>
-                Sistema de Compartilhamento de Patinetes
-            </p>
+        <input
+        id="usuario"
+        type="text"
+        placeholder="RA ou E-mail">
+
+        <label>Senha</label>
+
+        <input
+        id="senha"
+        type="password"
+        placeholder="Digite sua senha">
+
+        <button
+        class="login-btn"
+        onclick="login()">
+
+            Entrar
+
+        </button>
+
+        <div class="demo-box">
+
+            <h3>Modo Demonstração</h3>
+
+            <p>RA: 202510123</p>
+
+            <p>Senha: 123456</p>
 
         </div>
 
@@ -50,8 +80,38 @@
 
 </div>
 
-<script src="app.js"></script>
+<script>
+
+function login(){
+
+    const usuario =
+    document.getElementById("usuario").value;
+
+    const senha =
+    document.getElementById("senha").value;
+
+    if(
+        usuario === "202510123"
+        &&
+        senha === "123456"
+    ){
+
+        window.location.href =
+        "home.html";
+
+    }
+
+    else{
+
+        alert(
+        "Usuário ou senha inválidos"
+        );
+
+    }
+
+}
+
+</script>
 
 </body>
-
 </html>
