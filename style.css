@@ -345,5 +345,65 @@ margin-top:5px;
 .estacao p{
 
     color:#D6E4FF;
+  
+.mapa-img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    display:block;
+
+}
+
+.acoes-secundarias{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:15px;
+
+    margin-bottom:100px;
+
+}
+
+.acoes-secundarias button{
+
+    flex:1;
+
+}
+
+.acao-principal{
+
+    position:fixed;
+
+    bottom:15px;
+
+    left:15px;
+
+    right:15px;
+
+}
+
+.acao-principal button{
+
+    width:100%;
+
+    height:65px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 10px 25px rgba(
+        43,
+        140,
+        255,
+        0.35
+    );
 
 }
