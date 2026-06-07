@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devolução do Patinete</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="header">
+        <h1>🛴 Devolução</h1>
+    </div>
+
+    <div class="card">
+
+        <h2>Estacione o patinete</h2>
+
+        <p>
+            Posicione o patinete em uma estação oficial
+            e escaneie o QR Code para finalizar a viagem.
+        </p>
+
+        <div class="qr-simulacao">
+
+            <div class="qr-box">
+                QR
+            </div>
+
+        </div>
+
+        <button
+        class="btn-principal"
+        onclick="finalizarViagem()">
+
+            Escanear QR Code
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+function finalizarViagem(){
+
+    window.location.href =
+    "viagem-finalizada.html";
+
+}
+
+</script>
+
+</body>
+</html>
