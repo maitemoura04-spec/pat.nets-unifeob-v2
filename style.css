@@ -346,11 +346,21 @@ margin-top:5px;
 
     color:#D6E4FF;
   
+.mapa-card{
+
+    padding:12px;
+
+}
+
 .mapa-img{
 
     width:100%;
 
-    border-radius:20px;
+    max-height:260px;
+
+    object-fit:cover;
+
+    border-radius:16px;
 
     display:block;
 
