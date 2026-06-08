@@ -441,9 +441,9 @@ margin-top:15px;
 
 position:relative;
 
-overflow:hidden;
+width:100%;
 
-border-radius:20px;
+margin-bottom:25px;
 
 }
 
@@ -457,79 +457,55 @@ border-radius:20px;
 
 }
 
-/* ÁREAS CLICÁVEIS */
-
 .pin{
 
 position:absolute;
-transform: translateY(-100px);
 
-width:80px;
+width:40px;
 
-height:80px;
+height:40px;
 
 border-radius:50%;
 
-background:rgba(88,182,255,0.15);
+background:transparent;
 
-backdrop-filter:blur(4px);
+cursor:pointer;
 
 }
 
 /* POSIÇÕES */
 
-.e1{
-
-left:18%;
-
-top:82%;
-
-}
-
-.e2{
-
-left:60%;
-
-top:84%;
-
-}
-
-.ab{
-
-left:56%;
-
-top:56%;
-
-}
-
-.c{
-
-left:53%;
-
-top:30%;
-
+.f{
+top:12%;
+left:16%;
 }
 
 .ed{
-
-left:37%;
-
-top:20%;
-
+top:18%;
+left:36%;
 }
 
-.f{
+.c{
+top:23%;
+left:54%;
+}
 
-left:16%;
-
-top:14%;
-
+.ab{
+top:57%;
+left:56%;
 }
 
 .v{
+top:61%;
+left:78%;
+}
 
-left:76%;
+.e1{
+top:77%;
+left:24%;
+}
 
-top:58%;
-
+.e2{
+top:78%;
+left:61%;
 }
