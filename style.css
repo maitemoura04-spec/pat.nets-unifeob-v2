@@ -1,551 +1,140 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
 
-body{
+<meta charset="UTF-8">
 
-background:linear-gradient(
-180deg,
-#08111F 0%,
-#0B1628 50%,
-#101C31 100%
-);
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-color:#FFFFFF;
+<title>Home</title>
 
-font-family:'Segoe UI',sans-serif;
+<link rel="stylesheet" href="style.css">
 
-min-height:100vh;
+</head>
 
-padding:20px;
+<body>
 
-}
+<header>
 
-/* LOGIN */
+<h1>Pat.nets UNIFEOB</h1>
 
-.login-container{
+<p>Sistema de Mobilidade Acadêmica</p>
 
-max-width:400px;
+<p>PÁGINA INICIAL</p>
 
-margin:auto;
+</header>
 
-margin-top:100px;
+<div class="card">
 
-display:flex;
+<h2>🛴 Pat.nets UNIFEOB</h2>
 
-flex-direction:column;
+<p>
+Mobilidade Inteligente para o Campus Mantiqueira
+</p>
 
-gap:15px;
+<p class="disponivel">
+100 patinetes cadastrados no sistema
+</p>
 
-}
+</div>
 
-.login-container h1{
+<div class="card">
 
-text-align:center;
+<h2>📍 Patinetes Disponíveis</h2>
 
-font-size:34px;
+</div>
 
-color:#FFFFFF;
+<div class="card">
 
-}
+<h2>🗺️ Mapa do Campus</h2>
 
-.login-container p{
+<div class="mapa-container">
 
-text-align:center;
+<img
+src="mapa-campus.png"
+class="mapa-campus"
+id="mapaCampus">
 
-color:#A9B8D0;
+<a href="estacao-e1.html" class="pin e1"></a>
 
-margin-bottom:15px;
+<a href="estacao-e2.html" class="pin e2"></a>
 
-}
+<a href="estacao-ab.html" class="pin ab"></a>
 
-/* INPUTS */
+<a href="estacao-c.html" class="pin c"></a>
 
-input{
+<a href="estacao-ed.html" class="pin ed"></a>
 
-background:#15233A;
+<a href="estacao-f.html" class="pin f"></a>
 
-color:white;
+<a href="estacao-v.html" class="pin v"></a>
 
-border:1px solid #243855;
+</div>
 
-border-radius:16px;
+</div>
 
-padding:16px;
+<div class="estacao">
+<h3>Estação A</h3>
+<p>2/10 disponíveis</p>
+</div>
 
-font-size:16px;
+<div class="estacao">
+<h3>Estação B</h3>
+<p>3/10 disponíveis</p>
+</div>
 
-transition:0.3s;
+<div class="estacao">
+<h3>Estação C</h3>
+<p>4/10 disponíveis</p>
+</div>
 
-}
+<div class="estacao">
+<h3>Estação D</h3>
+<p>2/10 disponíveis</p>
+</div>
 
-input:focus{
+<div class="estacao">
+<h3>Estação E1</h3>
+<p>15/30 disponíveis</p>
+</div>
 
-outline:none;
+<div class="estacao">
+<h3>Estação E2</h3>
+<p>17/30 disponíveis</p>
+</div>
 
-border-color:#3FA9FF;
+<div class="card">
 
-box-shadow:
-0 0 15px rgba(
-63,
-169,
-255,
-0.3
-);
+<h2>🚀 Ações Rápidas</h2>
 
-}
+<button onclick="location.href='reserva.html'">
+📍 Reservar Patinete
+</button>
 
-/* BOTÕES */
+<br><br>
 
-button{
+<button onclick="location.href='historico.html'">
+📖 Histórico
+</button>
 
-background:linear-gradient(
-135deg,
-#2B8CFF,
-#58B6FF
-);
+<br><br>
 
-color:white;
+<button onclick="location.href='perfil.html'">
+👤 Meu Perfil
+</button>
 
-border:none;
+</div>
 
-border-radius:16px;
+<div class="card">
 
-padding:16px;
+<h2>📊 Informações Gerais do Sistema</h2>
 
-font-size:16px;
+<p>134 viagens realizadas no Campus hoje</p>
 
-font-weight:600;
+<p>5,8 kg de CO₂ evitados</p>
 
-cursor:pointer;
+</div>
 
-transition:0.3s;
+</body>
 
-}
-
-button:hover{
-
-transform:translateY(-2px);
-
-box-shadow:
-0 8px 20px rgba(
-43,
-140,
-255,
-0.3
-);
-
-}
-
-/* HEADER */
-
-header{
-
-margin-bottom:20px;
-
-}
-
-header h1{
-
-font-size:30px;
-
-margin-bottom:5px;
-
-}
-
-header p{
-
-color:#A9B8D0;
-
-}
-
-/* CARDS */
-
-.card{
-
-background:rgba(
-22,
-35,
-58,
-0.95
-);
-
-border:1px solid #243855;
-
-border-radius:24px;
-
-padding:22px;
-
-margin-bottom:18px;
-
-backdrop-filter:blur(10px);
-
-box-shadow:
-0 8px 24px rgba(
-0,
-0,
-0,
-0.25
-);
-
-}
-
-.card h2{
-
-color:#58B6FF;
-
-margin-bottom:10px;
-
-}
-
-.card p{
-
-color:#D6E4FF;
-
-line-height:1.6;
-
-}
-
-/* ESTAÇÕES */
-
-.estacao{
-
-background:#15233A;
-
-border:1px solid #243855;
-
-border-radius:18px;
-
-padding:15px;
-
-margin-bottom:12px;
-
-}
-
-.estacao h3{
-
-color:#58B6FF;
-
-margin-bottom:5px;
-
-}
-
-/* STATUS */
-
-.disponivel{
-
-color:#32D583;
-
-font-weight:600;
-
-}
-
-.alerta{
-
-color:#FF6B6B;
-
-font-weight:600;
-
-}
-
-/* MENU INFERIOR */
-
-nav{
-
-position:fixed;
-
-bottom:0;
-
-left:0;
-
-width:100%;
-
-background:#08111F;
-
-border-top:1px solid #243855;
-
-display:flex;
-
-justify-content:space-around;
-
-padding:16px;
-
-}
-
-nav a{
-
-color:white;
-
-text-decoration:none;
-
-font-size:24px;
-
-transition:0.3s;
-
-}
-
-nav a:hover{
-
-color:#58B6FF;
-
-}
-
-/* TÍTULO PREMIUM */
-
-.logo{
-
-font-size:36px;
-
-font-weight:700;
-
-color:#FFFFFF;
-
-}
-
-.subtitle{
-
-color:#A9B8D0;
-
-margin-top:5px;
-
-}
-  
-.estacao{
-
-    background:#15233A;
-
-    border:1px solid #243855;
-
-    border-radius:22px;
-
-    padding:18px;
-
-    margin-bottom:12px;
-
-    box-shadow:
-    0 4px 15px rgba(
-        0,
-        0,
-        0,
-        0.15
-    );
-
-}
-
-.estacao h3{
-
-    color:#58B6FF;
-
-    margin-bottom:6px;
-
-    font-size:20px;
-
-}
-
-.estacao p{
-
-    color:#D6E4FF;
-
-}
-
-.titulo-mapa{
-
-    color:#58B6FF;
-
-    font-size:32px;
-
-    margin-top:20px;
-
-    margin-bottom:15px;
-
-}
-  
-.mapa-img{
-
-    width:100%;
-
-    border-radius:20px;
-
-    display:block;
-
-}
-
-.acoes-secundarias{
-
-    display:flex;
-
-    gap:12px;
-
-    margin-top:15px;
-
-    margin-bottom:100px;
-
-}
-
-.acoes-secundarias button{
-
-    flex:1;
-
-}
-
-.acao-principal{
-
-    position:fixed;
-
-    bottom:15px;
-
-    left:15px;
-
-    right:15px;
-
-}
-
-.acao-principal button{
-
-    width:100%;
-
-    height:65px;
-
-    font-size:18px;
-
-    font-weight:700;
-
-    border-radius:18px;
-
-    box-shadow:
-    0 10px 25px rgba(
-        43,
-        140,
-        255,
-        0.35
-    );
-
-}
-.qr-simulacao{
-
-height:220px;
-
-background:#FFFFFF;
-
-color:#000000;
-
-border-radius:20px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:28px;
-
-font-weight:bold;
-
-margin-top:15px;
-
-}
-
-/* MAPA */
-
-.mapa-container{
-
-    position:relative;
-
-    width:100%;
-
-    margin-bottom:25px;
-
-    overflow:hidden;
-
-    border-radius:25px;
-
-}
-
-.mapa-campus{
-
-    width:100%;
-
-    display:block;
-
-    border-radius:25px;
-
-}
-
-/* ÁREAS CLICÁVEIS */
-
-.pin{
-
-position:absolute;
-transform: translateY(-100px);
-
-width:80px;
-
-height:80px;
-
-border-radius:50%;
-
-background:rgba(88,182,255,0.15);
-
-backdrop-filter:blur(4px);
-
-}
-
-/* POSIÇÕES */
-
-.e1{
-
-left:18%;
-
-top:82%;
-
-}
-
-.e2{
-
-left:60%;
-
-top:84%;
-
-}
-
-.ab{
-
-left:56%;
-
-top:56%;
-
-}
-
-.c{
-
-left:53%;
-
-top:30%;
-
-}
-
-.ed{
-
-left:37%;
-
-top:20%;
-
-}
-
-.f{
-
-left:16%;
-
-top:14%;
-
-}
-
-.v{
-
-left:76%;
-
-top:58%;
-
-}
+</html>
