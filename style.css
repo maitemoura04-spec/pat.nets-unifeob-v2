@@ -509,3 +509,37 @@ left:24%;
 top:78%;
 left:61%;
 }
+
+.grid-estacoes{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+}
+
+.grid-estacoes .estacao{
+
+    margin-bottom:0;
+
+    padding:16px;
+
+}
+
+.grid-estacoes .estacao h3{
+
+    font-size:22px;
+
+    margin-bottom:8px;
+
+}
+
+.grid-estacoes .estacao p{
+
+    font-size:18px;
+
+}
