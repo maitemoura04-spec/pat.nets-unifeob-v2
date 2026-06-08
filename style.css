@@ -349,6 +349,18 @@ margin-top:5px;
     color:#D6E4FF;
 
 }
+
+.titulo-mapa{
+
+    color:#58B6FF;
+
+    font-size:32px;
+
+    margin-top:20px;
+
+    margin-bottom:15px;
+
+}
   
 .mapa-img{
 
@@ -439,21 +451,25 @@ margin-top:15px;
 
 .mapa-container{
 
-position:relative;
+    position:relative;
 
-overflow:hidden;
+    width:100%;
 
-border-radius:20px;
+    margin-bottom:25px;
+
+    overflow:hidden;
+
+    border-radius:25px;
 
 }
 
 .mapa-campus{
 
-width:100%;
+    width:100%;
 
-display:block;
+    display:block;
 
-border-radius:20px;
+    border-radius:25px;
 
 }
 
